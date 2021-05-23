@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/Product.js" defer></script>
+	<script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<h2 class="add__product-title">Список продуктов</h2>
+		<div class="product">
+
+		</div>
+
+		<div class="add__product">
+			<h2 class="add__product-title">добавить / изменить продукт</h2>
+			<p class="add__product-subtitle">*Для изменения продукта, нажмите на его название или просто введите его.
+			</p>
+			<form>
+				<div class="item-text">
+					<input class="add__product-input product-input-name" type="text" placeholder="Название продукта">
+				</div>
+
+				<div class="item-color">
+					<span>Выбирите цвет</span>
+					<input class="add__product-checkbox blue" id="color-1" name="product-color" type="radio"
+						value="синий"><label for="color-1">синий</label>
+					<input class="add__product-checkbox red" id="color-2" name="product-color" type="radio" checked
+						value="красный"><label for="color-2">красный</label>
+					<input class="add__product-checkbox green" id="color-3" name="product-color" type="radio"
+						value="зеленый"><label for="color-3">зеленый</label>
+				</div>
+				<div class="item-text">
+					<input class="add__product-input product-num" type="text" placeholder="Количество">
+				</div>
+
+				<div class="item-btns">
+					<button class="product-btn btn-save" disabled="true">Сохранить</button>
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+
+
+
+</body>
+
+</html>

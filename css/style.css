@@ -1,0 +1,173 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+}
+p, a{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  font-family: 'Lato', sans-serif; 
+  font-weight: 300;
+}
+.hidden{
+  display: none;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+
+.product{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+.product__item{
+  max-width: 200px;
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid rgba(139, 138, 138, 0.2);
+  margin: 25px 10px;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+.product__item:hover{
+  box-shadow: 0 0 20px rgba(0,0,0, 0.2); 
+}
+.product__item-name{
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(139, 138, 138, 0.2);
+  padding-bottom: 5px;
+}
+.add__product{
+  text-align: center;
+}
+.add__product span{
+  display: block;
+  padding: 5px 0;  
+}
+.add__product-title{
+  text-align: center;
+  margin: 50px auto 0;
+  text-transform: uppercase;
+  font-size: 52px;
+}
+.add__product-subtitle{
+  font-size: 16px;
+  margin: 20px 0;
+  color: rgb(185, 200, 200);
+  letter-spacing: 1.7px;
+
+}
+
+.item-color,
+.item-text{
+  display: inline-block;
+  padding: 0 20px;
+  text-align: left;
+}
+.product-btn{
+  text-align: center;
+  margin: 50px 10px;
+  border: none;
+  font-size: 28px;
+  padding: 7px 15px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 25px;
+  width: 250px;
+
+}
+.btn-save{
+  background-color: rgb(70, 190, 90);
+}
+.btn-save:disabled{
+  background: rgb(102, 101, 101);
+  cursor:auto;
+}
+.btn-del{
+  background-color: rgb(219, 44, 44);
+  cursor: pointer;
+}
+.add__product-checkbox{
+  margin-right: 5px;
+}
+label{
+  margin-right: 15px;
+  line-height: 28px;
+}
+.blue + label{
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+.red + label{
+  color: red;
+  border-bottom: 1px solid red;
+}
+.green + label{
+  color: green;
+  border-bottom: 1px solid green;
+}
+input{
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #888;
+}
+.product__item-name{
+  cursor: pointer;
+}
+
+
+
+
+/* @media */
+@media(max-width: 1000px) {}
